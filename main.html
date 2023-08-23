@@ -5,12 +5,78 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+ <style>
+    body {
+      background-color: rgb(204, 204, 204);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration-line: none;
+      color: #333;
+    }
+
+    .player_one,
+    .player_two {
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 5px;
+      margin: 20px auto;
+      max-width: 500px;
+    }
+  </style>
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+ <h1>My Playlist</h1>
+  
+  <h2>Now Playing...</h2>
+  
+  <div class="player_one">
+    <h2>MP3 Songs</h2>
+    <ul>
+      <li><a href="#" target="_blank">Song 1</a></li>
+      <li><a href="#" target="_blank">Song 2</a></li>
+      <li><a href="#" target="_blank">Song 3</a></li>
+      <li><a href="#" target="_blank">Song 4</a></li>
+      <li><a href="#" target="_blank">Song 5</a></li>
+    </ul>
+  </div>
 
+  <div class="player_two">
+    <h2>Video and Audio Player</h2>
+    <video controls>
+      <source src="example_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <audio controls>
+      <source src="example_audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
 </body>
 
 </html>
